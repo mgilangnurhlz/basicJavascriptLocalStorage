@@ -4,21 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Localstorage</title>
   </head>
 
   <body>
     <div>
       <div>Pendataan Mahasiswa</div>
 
-      <form>
+      <form action="" id="form-list">
         <div>
           <label>Nama Lengkap</label>
-          <input />
+          <input type="text" name="nama" id="nama" />
         </div>
         <div>
           <label>NIM</label>
-          <input />
+          <input type="text" name="nim" id="nim" />
         </div>
         <div>
           <label>Jurusan</label>
@@ -30,12 +30,7 @@
           </div>
         </div>
         <div>
-          <button
-            type="submit"
-            id="submitBtn"
-            class="btn"
-            value="Tambah Mahasiswa"
-          >
+          <button type="submit" id="submitBtn" value="Tambah Mahasiswa">
             Submit
           </button>
         </div>
@@ -45,8 +40,8 @@
       <div>Data Mahasiswa</div>
 
       <form>
-        <div>
-          <table>
+        <div id="data">
+          <table border="1">
             <thead>
               <tr>
                 <th>No.</th>
@@ -55,10 +50,12 @@
                 <th>Jurusan</th>
               </tr>
             </thead>
-            <tbody></tbody>
+            <tbody id="tbody1"></tbody>
           </table>
         </div>
       </form>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
