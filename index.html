@@ -4,44 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Localstorage</title>
+    <title>Local Storage</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <div>
-      <div>Pendataan Mahasiswa</div>
+    <div class="demo-localstorage">
+      <div class="judul">Pendataan Mahasiswa</div>
 
-      <form action="" id="form-list">
-        <div>
+      <form class="formnya" action="" id="form-list">
+        <div class="inputna">
           <label>Nama Lengkap</label>
-          <input type="text" name="nama" id="nama" />
+          <input type="text" class="input" name="nama" id="nama" />
         </div>
-        <div>
+        <div class="inputna">
           <label>NIM</label>
-          <input type="text" name="nim" id="nim" />
+          <input type="text" class="input" name="nim" id="nim" />
         </div>
-        <div>
+        <div class="inputna">
           <label>Jurusan</label>
-          <div>
+          <div class="custom-select">
             <select name="jurusan" id="jurusan">
               <option value="informatika">Teknik Informatika</option>
               <option value="elektro">Teknik Elektro</option>
             </select>
           </div>
         </div>
-        <div>
-          <button type="submit" id="submitBtn" value="Tambah Mahasiswa">
+        <div class="inputna">
+          <button
+            type="submit"
+            id="submitBtn"
+            class="btn"
+            value="Tambah Mahasiswa"
+          >
             Submit
           </button>
         </div>
       </form>
     </div>
-    <div>
-      <div>Data Mahasiswa</div>
+    <div class="demo-localstorage">
+      <div class="judul">Data Mahasiswa</div>
 
-      <form>
+      <form class="formnya">
         <div id="data">
-          <table border="1">
+          <table class="tabel" border="1">
             <thead>
               <tr>
                 <th>No.</th>
